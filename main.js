@@ -138,9 +138,9 @@ const { pmblockerCommand, readState: readPmBlockerState } = require('./commands/
 
 
 // Global settings
-global.packname = settings.packname;
-global.author = settings.author;
-global.channelLink = "https://whatsapp.com/channel/0029Vb6mPnP2v1J23FOJRW0q";
+global.packname = 𝔇𝔢𝔪𝔬𝔫×͜×𝔏𝔬𝔯𝔡;
+global.author = ;
+global.channelLink = "https://whatsapp.com/channel/0029Vb7AXCx8PgsB6CFsL42c";
 global.ytch = "OWNER OF HIDEOUT";
 
 // Add this near the top of main.js with other global configurations
@@ -149,8 +149,8 @@ const channelInfo = {
         forwardingScore: 1,
         isForwarded: false,
         forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363404917414335@newsletter',
-            newsletterName: 'MINATO MD',
+            newsletterJid: '120363424415573397@g.us',
+            newsletterName: 'Immortality',
             serverMessageId: -1
         }
     }
@@ -205,7 +205,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
             // Only respond occasionally to avoid spam
             if (Math.random() < 0.1) {
                 await sock.sendMessage(chatId, {
-                    text: '🛑 MINATO MD: You’ve been officially blocked from commands. Talk to an admin.',
+                    text: '🛑 Immortality: You’ve been officially blocked from commands. Talk to an admin.',
                     ...channelInfo
                 });
             }
@@ -277,7 +277,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
             ) {
                 if (!isSenderAdmin && !message.key.fromMe) {
                     await sock.sendMessage(chatId, {
-                        text: '😈 MINATO MD: Nice try, peasant. This button belongs to the kings and queens (admins).',
+                        text: '😈  Immortality: Nice try, peasant. This button belongs to the kings and queens (admins).',
                         ...channelInfo
                     });
                     return;
@@ -312,7 +312,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
                 if (quotedMessage?.stickerMessage) {
                     await simageCommand(sock, quotedMessage, chatId);
                 } else {
-                    await sock.sendMessage(chatId, { text: '🎯 Tip from MINATO MD: Just reply to any sticker with .simage and watch the magic happen ✨.', ...channelInfo });
+                    await sock.sendMessage(chatId, { text: '🎯 Tip from Immortality: Just reply to any sticker with .simage and watch the magic happen ✨.', ...channelInfo });
                 }
                 break;
             }
@@ -323,7 +323,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
             case userMessage.startsWith('.mute'):
                 const muteDuration = parseInt(userMessage.split(' ')[1]);
                 if (isNaN(muteDuration)) {
-                    await sock.sendMessage(chatId, { text: '🕒 MINATO MD Tip: Minutes must be valid! Try: .mute 10\neg to mute 10 minutes\n.mute 10', ...channelInfo });
+                    await sock.sendMessage(chatId, { text: '🕒 Immortality Tip: Minutes must be valid! Try: .mute 10\neg to mute 10 minutes\n.mute 10', ...channelInfo });
                 } else {
                     await muteCommand(sock, chatId, senderId, muteDuration);
                 }
@@ -413,7 +413,7 @@ case (userMessage && userMessage.trim().toLowerCase() === '.whoisgay'):
                     // Save updated data
                     fs.writeFileSync('./data/messageCount.json', JSON.stringify(data, null, 2));
 
-                    await sock.sendMessage(chatId, { text: `🔄 Mode updated — MINATO MD is now in *${action}* mode.`, ...channelInfo });
+                    await sock.sendMessage(chatId, { text: `🔄 Mode updated — Immortality is now in *${action}* mode.`, ...channelInfo });
                 } catch (error) {
                     console.error('Error updating access mode:', error);
                     await sock.sendMessage(chatId, { text: 'Failed to update bot access mode', ...channelInfo });
@@ -649,7 +649,7 @@ case userMessage === '.fight' || userMessage === '.battle' || userMessage === '.
             case userMessage.startsWith('.move'):
                 const position = parseInt(userMessage.split(' ')[1]);
                 if (isNaN(position)) {
-                    await sock.sendMessage(chatId, { text: '🕹 ARSLAN BOT says: That’s not a valid position! Pick a real one.', ...channelInfo });
+                    await sock.sendMessage(chatId, { text: '🕹 Immortality says: That’s not a valid position! Pick a real one.', ...channelInfo });
                 } else {
                     tictactoeMove(sock, chatId, senderId, position);
                 }
@@ -683,7 +683,7 @@ case userMessage === '.fight' || userMessage === '.battle' || userMessage === '.
                 if (answer) {
                     answerTrivia(sock, chatId, answer);
                 } else {
-                    sock.sendMessage(chatId, { text: '💬 ARSLAN BOT: Provide your answer using .answer <answer>', ...channelInfo });
+                    sock.sendMessage(chatId, { text: '💬 Immortality: Provide your answer using .answer <answer>', ...channelInfo });
                 }
                 break;
             case userMessage.startsWith('.compliment'):
@@ -766,7 +766,7 @@ case userMessage === '.fight' || userMessage === '.battle' || userMessage === '.
                         await sock.sendMessage(chatId, { text: '👑 This power is reserved for the royal admins of this group.', ...channelInfo });
                     }
                 } else {
-                    await sock.sendMessage(chatId, { text: '🏠 MINATO MD: This command can only be used inside groups...', ...channelInfo });
+                    await sock.sendMessage(chatId, { text: '🏠 Immortality: This command can only be used inside groups...', ...channelInfo });
                 }
                 break;
             case userMessage.startsWith('.goodbye'):
@@ -783,7 +783,7 @@ case userMessage === '.fight' || userMessage === '.battle' || userMessage === '.
                         await sock.sendMessage(chatId, { text: '👑 This power is reserved for the royal admins of this group.', ...channelInfo });
                     }
                 } else {
-                    await sock.sendMessage(chatId, { text: '🏠 MINATO MD: This command can only be used inside groups...', ...channelInfo });
+                    await sock.sendMessage(chatId, { text: '🏠 Immortality: This command can only be used inside groups...', ...channelInfo });
                 }
                 break;
             case userMessage === '.git':
@@ -795,7 +795,7 @@ case userMessage === '.fight' || userMessage === '.battle' || userMessage === '.
                 break;
             case userMessage.startsWith('.antibadword'):
                 if (!isGroup) {
-                    await sock.sendMessage(chatId, { text: '🏠 MINATO MD: This command can only be used inside groups...', ...channelInfo });
+                    await sock.sendMessage(chatId, { text: '🏠 Immortality: This command can only be used inside groups...', ...channelInfo });
                     return;
                 }
 
@@ -804,7 +804,7 @@ case userMessage === '.fight' || userMessage === '.battle' || userMessage === '.
                 isBotAdmin = adminStatus.isBotAdmin;
 
                 if (!isBotAdmin) {
-                    await sock.sendMessage(chatId, { text: '*👑 Give MINATO MD admin powers before trying this!*', ...channelInfo });
+                    await sock.sendMessage(chatId, { text: '*👑 Give Immortality admin powers before trying this!*', ...channelInfo });
                     return;
                 }
 
@@ -812,14 +812,14 @@ case userMessage === '.fight' || userMessage === '.battle' || userMessage === '.
                 break;
             case userMessage.startsWith('.chatbot'):
                 if (!isGroup) {
-                    await sock.sendMessage(chatId, { text: '👥 MINATO MD says: You gotta be in a group to run this..', ...channelInfo });
+                    await sock.sendMessage(chatId, { text: '👥 Immortality says: You gotta be in a group to run this..', ...channelInfo });
                     return;
                 }
 
                 // Check if sender is admin or bot owner
                 const chatbotAdminStatus = await isAdmin(sock, chatId, senderId);
                 if (!chatbotAdminStatus.isSenderAdmin && !message.key.fromMe) {
-                    await sock.sendMessage(chatId, { text: '*🚫 MINATO MD: Only group admins or the bot owner can use this command. 👑*', ...channelInfo });
+                    await sock.sendMessage(chatId, { text: '*🚫 Immortality: Only group admins or the bot owner can use this command. 👑*', ...channelInfo });
                     return;
                 }
 
@@ -858,21 +858,21 @@ case userMessage === '.fight' || userMessage === '.battle' || userMessage === '.
                 break;
             case userMessage === '.groupinfo' || userMessage === '.infogp' || userMessage === '.infogrupo':
                 if (!isGroup) {
-                    await sock.sendMessage(chatId, { text: '👥 MINATO MD says: You must be in a group to use this.', ...channelInfo });
+                    await sock.sendMessage(chatId, { text: '👥 Immortality says: You must be in a group to use this.', ...channelInfo });
                     return;
                 }
                 await groupInfoCommand(sock, chatId, message);
                 break;
             case userMessage === '.resetlink' || userMessage === '.revoke' || userMessage === '.anularlink':
                 if (!isGroup) {
-                    await sock.sendMessage(chatId, { text: '👥 MINATO MD says: You must be in a group to use this.', ...channelInfo });
+                    await sock.sendMessage(chatId, { text: '👥 Immortality says: You must be in a group to use this.', ...channelInfo });
                     return;
                 }
                 await resetlinkCommand(sock, chatId, senderId);
                 break;
             case userMessage === '.staff' || userMessage === '.admins' || userMessage === '.listadmin':
                 if (!isGroup) {
-                    await sock.sendMessage(chatId, { text: '👥 MINATO MD says: You must be in a group to use this.', ...channelInfo });
+                    await sock.sendMessage(chatId, { text: '👥 Immortality says: You must be in a group to use this.', ...channelInfo });
                     return;
                 }
                 await staffCommand(sock, chatId, message);
@@ -1024,7 +1024,7 @@ case userMessage.startsWith('.sudo'):
 
                     if (!groupJid.endsWith('@g.us')) {
                         return await sock.sendMessage(chatId, {
-                            text: "👥 MINATO MD says: You must be in a group to use this."
+                            text: "👥 Immortality says: You must be in a group to use this."
                         });
                     }
 
@@ -1056,7 +1056,7 @@ case userMessage.startsWith('.sudo'):
         // Only try to send error message if we have a valid chatId
         if (chatId) {
             await sock.sendMessage(chatId, {
-                text: '💥 Error! MINATO MD couldn’t complete your request.',
+                text: '💥 Error! Immortality couldn’t complete your request.',
                 ...channelInfo
             });
         }
@@ -1096,8 +1096,8 @@ async function handleGroupParticipantUpdate(sock, update) {
             // Get welcome message from data
             const data = JSON.parse(fs.readFileSync('./data/userGroupData.json'));
             const welcomeData = data.welcome[id];
-            const welcomeMessage = welcomeData?.message || '👑 MINATO MD: Hail {user}! The group just got cooler with you here!';
-            const channelId = welcomeData?.channelId || '120363404917414335@newsletter';
+            const welcomeMessage = welcomeData?.message || '👑 Immortality: Hail {user}! The group just got cooler with you here!';
+            const channelId = welcomeData?.channelId || '120363424415573397@g.us';
 
             // Send welcome message for each new participant
             for (const participant of participants) {
@@ -1114,8 +1114,8 @@ async function handleGroupParticipantUpdate(sock, update) {
                         forwardingScore: 1,
                         isForwarded: true,
                         forwardedNewsletterMessageInfo: {
-                            newsletterJid: 120363404917414335@newsletter,
-                            newsletterName: 'MINATO MD',
+                            newsletterJid: 120363424415573397@g.us,
+                            newsletterName: 'Immortality',
                             serverMessageId: -1
                         }
                     }
@@ -1137,7 +1137,7 @@ async function handleGroupParticipantUpdate(sock, update) {
             const data = JSON.parse(fs.readFileSync('./data/userGroupData.json'));
             const goodbyeData = data.goodbye[id];
             const goodbyeMessage = goodbyeData?.message || 'Goodbye {user} 👋';
-            const channelId = goodbyeData?.channelId || '120363404917414335@newsletter';
+            const channelId = goodbyeData?.channelId || '120363424415573397@g.us';
 
             // Send goodbye message for each leaving participant
             for (const participant of participants) {
@@ -1153,8 +1153,8 @@ async function handleGroupParticipantUpdate(sock, update) {
                         forwardingScore: 1,
                         isForwarded: true,
                         forwardedNewsletterMessageInfo: {
-                            newsletterJid: 120363404917414335@newsletter,
-                            newsletterName: 'MINATO MD',
+                            newsletterJid: 120363424415573397@g.us,
+                            newsletterName: 'Immortality',
                             serverMessageId: -1
                         }
                     }
