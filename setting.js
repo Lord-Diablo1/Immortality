@@ -3,22 +3,22 @@
 
 const settings = {
   // 🏷️ Sticker Settings
-  packname: '💎 MINATO MD 💎',
-  author: '👑 MINATO NAMIKAZE 🇯🇵',
+  packname: 'Immortality',
+  author: '𝔇𝔢𝔪𝔬𝔫×͜×𝔏𝔬𝔯𝔡',
 
   // 🤖 Bot Identity
-  botName: '⚡ MINATO MD ⚡',
-  botOwner: '🌍 MINATO NAMIKAZE 🇯🇵',   // Change to your name if needed
-  ownerNumber: '8801719741293',        // Your number without + symbol
+  botName: 'Immortality',
+  botOwner: '𝔇𝔢𝔪𝔬𝔫×͜×𝔏𝔬𝔯𝔡',   // Change to your name if needed
+  ownerNumber: '917795906902',        // Your number without + symbol
 
   // 🎬 APIs
   giphyApiKey: 'qnl7ssQChTdPjsKta2Ax2LMaGXz303tq', // For GIF commands
 
   // ⚙️ Bot Mode
-  commandMode: 'public', // Options: 'public' (everyone) | 'private' (owner only)
+  commandMode: 'private', // Options: 'public' (everyone) | 'private' (owner only)
 
   // 📝 Meta Information
-  description: '💬 A fun, powerful & stylish WhatsApp MD bot created with ❤️ by Hideout Aura.',
+  description: 'Made by 𝔇𝔢𝔪𝔬𝔫×͜×𝔏𝔬𝔯𝔡, just a test bot.',
   version: '2.0.0',
 updateZipUrl: "https://github.com/minatonamikaze359/Minato-MD",
   
