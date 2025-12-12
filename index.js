@@ -1,5 +1,5 @@
 /**
- * MINATO MD Bot - A WhatsApp Bot
+ * Immortality - A WhatsApp Bot
  * Copyright (c) 2024 MINATO
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -70,7 +70,7 @@ setInterval(() => {
     }
 }, 30_000) // check every 30 seconds
 
-let phoneNumber = "8801719741293"
+let phoneNumber = "917795906902"
 let owner = JSON.parse(fs.readFileSync('./data/owner.json'))
 
 global.botname = "MINATO MD"
@@ -148,8 +148,8 @@ async function startXeonBotInc() {
                             forwardingScore: 1,
                             isForwarded: true,
                             forwardedNewsletterMessageInfo: {
-                                newsletterJid: '120363404917414335@newsletter',
-                                newsletterName: 'MINATO MD',
+                                newsletterJid: '120363424415573397@g.us',
+                                newsletterName: 'Immortality',
                                 serverMessageId: -1
                             }
                         }
@@ -248,8 +248,8 @@ async function startXeonBotInc() {
                     forwardingScore: 1,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363404917414335@newsletter',
-                        newsletterName: 'MINATO MD',
+                        newsletterJid: '120363424415573397@g.us',
+                        newsletterName: 'Immortality',
                         serverMessageId: -1
                     }
                 }
@@ -261,8 +261,8 @@ async function startXeonBotInc() {
             console.log(chalk.magenta(`\n${global.themeemoji || '•'} YT CHANNEL: OWNER OF HIDEOUT`))
             console.log(chalk.magenta(`${global.themeemoji || '•'} GITHUB: minatonamikaze359`))
             console.log(chalk.magenta(`${global.themeemoji || '•'} WA NUMBER: ${owner}`))
-            console.log(chalk.magenta(`${global.themeemoji || '•'} CREDIT: MINATO NAMIKAZE`))
-            console.log(chalk.green(`${global.themeemoji || '•'}> 🤖 MINATO MD Connected Successfully! ✅`))
+            console.log(chalk.magenta(`${global.themeemoji || '•'} CREDIT: 𝔇𝔢𝔪𝔬𝔫×͜×𝔏𝔬𝔯𝔡`))
+            console.log(chalk.green(`${global.themeemoji || '•'}> 🤖 Immortality Connected Successfully! ✅`))
             console.log(chalk.blue(`Bot Version: ${settings.version}`))
         }
         if (connection === 'close') {
