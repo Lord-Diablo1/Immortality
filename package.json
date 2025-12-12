@@ -1,5 +1,5 @@
 {
-  "name": "minato-md",
+  "name": "Immortality",
   "version": "2.2.6",
   "description": "WhatsApp Bot",
   "main": "index.js",
@@ -12,7 +12,7 @@
   "keywords": [
     "whatsapp-bot"
   ],
-  "author": "SILVER-MD",
+  "author": "𝔇𝔢𝔪𝔬𝔫×͜×𝔏𝔬𝔯𝔡",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
